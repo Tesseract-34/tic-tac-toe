@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: rgba(0, 255, 255, 0.8);
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 255, 255, 0.5);
+}
+
+.cell:hover{
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+#resetButton {
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: black;
+    color: cyan;
+    box-shadow: 2px 2px 5px rgba(0, 255, 255, 0.5);
+}
+
+#resetButton:hover{
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+#clearHistoryButton {
+    padding: 10px 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: black;
+    color: cyan;
+    box-shadow: 2px 2px 5px rgba(0, 255, 255, 0.5);
+}
+
+#clearHistoryButton:hover{
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+#result {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: cyan;
+}
