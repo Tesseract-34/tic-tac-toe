@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="popup">
+        <h1 class="popup-title">Welcome to Tic-Tac-Toe</h1>
+        <button id="startGameButton">Start Game</button>
+    </div>
+
+    <!-- Player Mode Selection -->
+    <div id="modeSelection" class="popup hidden">
+        <h1>Select Mode</h1>
+        <button id="playerVsPlayer">1v1</button>
+        <button id="playerVsAI">Player vs AI</button>
+    </div>
+
+    <!-- Game Container -->
+    <div class="container hidden">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="result"></div>
+        <div class="board">
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+        </div>
+        <button id="resetButton">Reset</button>
+        <button id="clearHistoryButton">Clear History</button>
+        <div>
+            <label for="colorPicker">Choose Player Color:</label>
+            <input type="color" id="colorPicker" value="#00ffff">
+        </div>
+        <h2>Game History</h2>
+        <ul id="gameHistory"></ul>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
